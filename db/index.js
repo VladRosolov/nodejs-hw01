@@ -29,6 +29,7 @@ const addContact = async ({ name, email, phone }) => {
   };
   contacts.push(newContact);
   await updateContacts(contacts);
+  return newContact;
 };
 
 const updateById = async (id, data) => {
